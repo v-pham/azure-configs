@@ -1,0 +1,9 @@
+[Unit]
+Description=KVP daemon
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hv_kvp_daemon -n
+
+[Install]
+WantedBy=multi-user.target
